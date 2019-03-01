@@ -4,18 +4,60 @@
     box-sizing: border-box;
 }
 
-.main {
+img {
+    height: 300px;
+}
+
+#selfie {
+    border-radius: 50%;
+}
+
+#header {
+    background: #ebebeb;
+    text-align: center;
+    padding: 20px;
+    border-top: 5px solid #FE5F55;
+}
+
+#exp {
+    text-align: center;
+    padding: 20px;
+    background: #15A2B8;
+    color: #e2dede
+}
+
+.expList {
+    list-style-type: none;
+}
+
+#about {
+    background: #FE5F55;
+    text-align: center;
+    padding: 20px;
+}
+
+#work {
+    background: #ebebeb;
+    padding: 20px;
+}
+
+#wordCloud {
+    text-align: center;
+    padding: 20px;
+}
+
+#contact {
+    padding: 50px;
+    text-align: center;
     background: #ebebeb;
 }
 
-img {
-    height: 100px;
+input {
+    padding: 10px;
+    border-radius: 8px;
 }
 
-.body {
-    background: blue;
-}
-
-.work {
-    background: red;
+footer {
+    padding: 40px;
+    text-align: center;
 }
