@@ -40,22 +40,24 @@ img {
     color: #ebebeb;
 }
 
+/* styling for the icons */
+
 i.fa {
     padding: 20px 5px;
     font-size: 20px;
+    color: gray;
 }
 
 i.fa:hover{
     opacity: .7;
 }
 
-.fa-github {
-    color: gray;
+.col-sm i {
+    font-size: 45px;
+    color: #F66D6D;
 }
 
-.fa-linkedin {
-    color: gray;
-}
+/* --------------------- */
 
 /* --------------------- */
 /* End of header section */
@@ -63,23 +65,42 @@ i.fa:hover{
 
 #exp {
     text-align: center;
-    padding: 20px;
+    padding: 90px 0;
     background: #24315E;
-    color: #e2dede
+    color: #e2dede;
+}
+
+.expTitle {
+    padding-bottom: 30px;
 }
 
 .expList {
     list-style-type: none;
 }
+section.container {
+    margin: 0;
+    padding: 0;
+}
 
-#about {
-    background:;
-    text-align: center;
+#project {
     padding: 20px;
 }
 
-#work {
-    padding: 20px;
+#project h2 {
+    color: #F66D6D;
+}
+
+.container h3 {
+    color: #F66D6D;
+}
+
+.projectTitle {
+    text-align: center;
+    padding: 50px;
+}
+
+.row {
+    padding-top: 100px;
 }
 
 #wordCloud {
