@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue','Helvetica','Roboto','Arial','sans-serif';
+}
+
+h1, h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
 }
 
 .titleColor {
@@ -31,8 +42,8 @@ img {
     padding: 10px;
     background: transparent;
     border: 1px solid #F66D6D;
-    border-radius: 8px;
     color: #F66D6D;
+    border-radius: 8px;
 }
 
 .btn1:hover{
@@ -40,12 +51,16 @@ img {
     color: #ebebeb;
 }
 
+.btn1:focus {
+    outline: none;
+}
+
 /* styling for the icons */
 
 i.fa {
     padding: 20px 5px;
     font-size: 20px;
-    color: gray;
+    color: #748182;
 }
 
 i.fa:hover{
@@ -65,32 +80,28 @@ i.fa:hover{
 
 #exp {
     text-align: center;
-    padding: 90px 0;
-    background: #24315E;
-    color: #e2dede;
-}
-
-.expTitle {
-    padding-bottom: 30px;
+    padding: 60px 0;
+    background: #374785;
+    color: #ffffff;
 }
 
 .expList {
     list-style-type: none;
-}
-section.container {
-    margin: 0;
-    padding: 0;
+    color: #e2dede;
 }
 
-#project {
+div.expRow {
     padding: 20px;
 }
 
-#project h2 {
-    color: #F66D6D;
+
+/* ----------Project Section ------------*/
+
+#project {
+    padding: 10px;
 }
 
-.container h3 {
+.projectHeader {
     color: #F66D6D;
 }
 
@@ -99,9 +110,21 @@ section.container {
     padding: 50px;
 }
 
-.row {
-    padding-top: 100px;
+#project h2 {
+    text-transform: uppercase;
 }
+
+.row {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.photo {
+    height: 250px;
+    width: auto;
+}
+/*----------- End of project section ---------- */
+
 
 #wordCloud {
     background: #ebebeb;
@@ -110,7 +133,7 @@ section.container {
 }
 
 #contact {
-    padding: 50px;
+    padding: 100px;
     text-align: center;
     background: #F66D6D;
     color: #ffffff;
@@ -127,7 +150,11 @@ section.container {
 .btn2:hover {
     background: #ffffff;
     color: #F66D6D;
-    box-shadow: 0px 0px 10px #000000;
+    /*box-shadow: 0px 0px 10px #000;*/
+}
+
+.btn2:focus {
+    outline: none;
 }
 
 footer {
