@@ -57,18 +57,22 @@ img {
 
 /* styling for the icons */
 
-i.fa {
+.fa {
     padding: 20px 5px;
     font-size: 20px;
     color: #748182;
 }
 
-i.fa:hover{
+.fa:hover{
     opacity: .7;
 }
 
 .col-sm i {
     font-size: 45px;
+    color: #F66D6D;
+}
+
+.projectIcons {
     color: #F66D6D;
 }
 
@@ -123,9 +127,14 @@ div.expRow {
     height: 250px;
     width: auto;
 }
+
+.link {
+    color: #F66D6D;
+}
+
 /*----------- End of project section ---------- */
 
-
+/* ----------- Contact Section -------------------- */
 #wordCloud {
     background: #ebebeb;
     text-align: center;
@@ -157,8 +166,33 @@ div.expRow {
     outline: none;
 }
 
+.icons {
+    color: #ffffff;
+}
+
+/* -------------- End of contact ------------- */
+
 footer {
     padding: 40px;
     text-align: center;
     background: #ebebeb;
+}
+
+/*#logoText //{
+    background: #F66D6D;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    line-height: 3.2;
+    border-radius: 50%;
+}*/
+
+.logo {
+    height: 50px;
+    border-radius: 50%;
+    opacity: .8;
+}
+
+footer p {
+    padding-top: 10px;
 }
