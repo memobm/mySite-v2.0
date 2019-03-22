@@ -134,12 +134,17 @@ div.expRow {
 
 /*----------- End of project section ---------- */
 
-/* ----------- Contact Section -------------------- */
-#wordCloud {
+/* ----------- About Me section ------------------------ */
+
+#aboutMe {
     background: #ebebeb;
     text-align: center;
-    padding: 20px;
+    padding: 80px 20px;
 }
+
+/*----------- End of about me section ---------- */
+
+/* ----------- Contact Section -------------------- */
 
 #contact {
     padding: 100px;
