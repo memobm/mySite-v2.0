@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,400');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #F3CA40;
+	font-family: 'IBM Plex Sans', sans-serif; 
+}
+
+.main {
+	margin: 150px auto;
+	margin-bottom: 50px;
+	padding: 30px;
+	width: 380px;
+	border-radius: 1em;
+	box-shadow: -10px 10px 5px #264653;
+	background: #F2A541;
+	position: relative;
+}
+
+.title {
+	width: 250px;
+	text-align: center;
+	background: #264653;
+	border-radius: .5em;
+	position: absolute;
+	top: -34px;
+	left: 65px;
+}
+
+h1 {
+	padding: 10px;
+	color: white;
+}
+
+.bill {
+	margin-top: 20px;
+}
+
+.tipChoice, .tipPercent, .billSplit {
+	margin-top: 10px;
+}
+
+input[type=number] {
+	margin-top: 5px;
+	padding: 10px;
+	font-size: 15px;
+	outline: none;
+	border: none;
+	border-radius: .25em;
+	background: #ecf0f1;
+}
+
+.tipPercent {
+	height: 30px;
+	width: 100px;
+	font-size: 15px;
+	border: none;
+	outline: none;
+	background: #ecf0f1;
+}
+
+input[type=submit] {
+	margin-top: 30px;
+	height: 40px;
+	width: 100px;
+	background: #264653;
+	border: none;
+	border-radius: .5em;
+	font-size: 1em;
+	color: white;
+	outline: none;
+}
+
+.billSplit input[type=number]{
+	width: 100px;
+}
+
+.result {
+	margin-top: 10px;
+}
+
+.result p {
+	font-weight: bold;
+	font-size: 20px;
+	padding: 5px;
+}
+
+.red-glow {
+	color: #CC2936;
+}
