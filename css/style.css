@@ -52,6 +52,8 @@ img {
     background: #F66D6D;
     color: #ebebeb;
     width: 200px;
+    cursor: pointer;
+    transition: 0.3s all ease;
 }
 
 .btn1:focus {
@@ -66,7 +68,7 @@ img {
     color: #748182;
 }
 
-.fa:hover{
+.fa-set:hover{
     opacity: .7;
 }
 
@@ -131,10 +133,6 @@ div.expRow {
     width: 90%;
 }
 
-.link {
-    color: #F66D6D;
-}
-
 /*----------- End of project section ---------- */
 
 /* ----------- About Me section ------------------------ */
@@ -162,13 +160,15 @@ div.expRow {
     color: #ffffff;
     background: #F66D6D;
     padding: 10px;
+    transition: 0.3s all ease;
 }
 
 .btnHover2 {
     background: #ffffff;
     color: #F66D6D;
     width: 200px;
-    /*box-shadow: 0px 0px 10px #000;*/
+    cursor: pointer;
+    transition: 0.3s all ease;
 }
 
 .btn2:focus {
@@ -204,4 +204,19 @@ footer {
 
 footer p {
     padding-top: 10px;
+}
+
+/* For media queries */
+
+.project-mobile {
+    text-align: center;
+}
+
+.col-mobile {
+    padding-bottom: 20px;
+}
+
+.row-mobile {
+    padding-bottom: 25px;
+    padding-top: 25px;
 }
