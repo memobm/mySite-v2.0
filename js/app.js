@@ -8,6 +8,7 @@ const btnEl6 = document.querySelector('.btnAlt6');
 const divRowEl = document.querySelectorAll('.row');
 const projectEl = document.querySelector('.project-container');
 const col6El = document.querySelectorAll('.col-6');
+const divMainEl = document.querySelector('.main');
 let screenSize = window.matchMedia("(max-width: 760px)");
 
 function mediaQuery(screenSize) {
@@ -21,6 +22,7 @@ function mediaQuery(screenSize) {
             col.classList.add('col-mobile');
         }
         projectEl.classList.add('project-mobile');
+        divMainEl.classList.add('main-mobile');
     } else {
         for(let item of divRowEl){
             item.classList.add('row');
@@ -29,6 +31,7 @@ function mediaQuery(screenSize) {
             col.classList.add('col-6');
         }
         projectEl.classList.remove('project-mobile');
+        divMainEl.classList.remove('main-mobile');
     }
 }
 
@@ -46,6 +49,13 @@ function hover() {
     btnEl5.addEventListener("mouseout",() => btnEl5.classList.remove('btnHover'));
     btnEl6.addEventListener("mouseover", () => btnEl6.classList.add("btnHover2"));
     btnEl6.addEventListener("mouseout",() => btnEl6.classList.remove('btnHover2'));
+
+    btnEl1.addEventListener("click", () => btnEl1.classList.remove('btnHover'));
+    btnEl2.addEventListener("click",() => btnEl2.classList.remove('btnHover'));
+    btnEl3.addEventListener("click",() => btnEl3.classList.remove('btnHover'));
+    btnEl4.addEventListener("click",() => btnEl4.classList.remove('btnHover'));
+    btnEl5.addEventListener("click",() => btnEl5.classList.remove('btnHover'));
+    btnEl6.addEventListener("click",() => btnEl6.classList.remove('btnHover2'));
 }
 
 
