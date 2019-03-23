@@ -208,6 +208,10 @@ footer p {
 
 /* For media queries */
 
+.main-mobile {
+    padding: 0 40px 40px 40px;
+}
+
 .project-mobile {
     text-align: center;
 }
