@@ -46,9 +46,10 @@ img {
     border-radius: 8px;
 }
 
-.btn1:hover{
+ .btnHover{
     background: #F66D6D;
     color: #ebebeb;
+    width: 200px;
 }
 
 .btn1:focus {
@@ -161,9 +162,10 @@ div.expRow {
     padding: 10px;
 }
 
-.btn2:hover {
+.btnHover2 {
     background: #ffffff;
     color: #F66D6D;
+    width: 200px;
     /*box-shadow: 0px 0px 10px #000;*/
 }
 
