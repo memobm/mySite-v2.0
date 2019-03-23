@@ -5,6 +5,33 @@ const btnEl4 = document.querySelector('.btnAlt4');
 const btnEl5 = document.querySelector('.btnAlt5');
 const btnEl6 = document.querySelector('.btnAlt6');
 
+const divRowEl = document.querySelectorAll('.row');
+const projectEl = document.querySelector('.project-container');
+const col6El = document.querySelectorAll('.col-6');
+let screenSize = window.matchMedia("(max-width: 760px)");
+
+function mediaQuery(screenSize) {
+    if(screenSize.matches) {
+        for(let item of divRowEl) {
+            item.classList.remove('row');
+            item.classList.add('row-mobile')
+        }
+        for (let col of col6El) {
+            col.classList.remove('col-6');
+            col.classList.add('col-mobile');
+        }
+        projectEl.classList.add('project-mobile');
+    } else {
+        for(let item of divRowEl){
+            item.classList.add('row');
+        }
+        for (let col of col6El) {
+            col.classList.add('col-6');
+        }
+        projectEl.classList.remove('project-mobile');
+    }
+}
+
 function hover() {
 // Adding Event Listeners
     btnEl1.addEventListener("mouseover", () => btnEl1.classList.add('btnHover'));
@@ -21,4 +48,7 @@ function hover() {
     btnEl6.addEventListener("mouseout",() => btnEl6.classList.remove('btnHover2'));
 }
 
+
 hover();
+mediaQuery(screenSize);
+screenSize.addListener(mediaQuery);
