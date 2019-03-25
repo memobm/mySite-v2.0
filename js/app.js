@@ -9,6 +9,8 @@ const divRowEl = document.querySelectorAll('.row');
 const projectEl = document.querySelector('.project-container');
 const col6El = document.querySelectorAll('.col-6');
 const divMainEl = document.querySelector('.main');
+const mobileImageEl = document.querySelector('.mobile-image');
+const desktopImageEl = document.querySelector('.desktop-image');
 let screenSize = window.matchMedia("(max-width: 760px)");
 
 function mediaQuery(screenSize) {
@@ -23,6 +25,9 @@ function mediaQuery(screenSize) {
         }
         projectEl.classList.add('project-mobile');
         divMainEl.classList.add('main-mobile');
+        mobileImageEl.classList.add('mobile-image-show');
+        desktopImageEl.classList.add('mobile-image');
+
     } else {
         for(let item of divRowEl){
             item.classList.add('row');
@@ -32,6 +37,8 @@ function mediaQuery(screenSize) {
         }
         projectEl.classList.remove('project-mobile');
         divMainEl.classList.remove('main-mobile');
+        mobileImageEl.classList.remove('mobile-image-show');
+        desktopImageEl.classList.remove('mobile-image');
     }
 }
 

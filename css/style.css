@@ -133,6 +133,14 @@ div.expRow {
     width: 90%;
 }
 
+.mobile-image {
+    display: none;
+}
+
+.mobile-image-show {
+    display: block;
+}
+
 /*----------- End of project section ---------- */
 
 /* ----------- About Me section ------------------------ */
