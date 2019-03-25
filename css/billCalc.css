@@ -16,7 +16,8 @@ body {
 	margin: 150px auto;
 	margin-bottom: 50px;
 	padding: 30px;
-	width: 380px;
+	width: 100%;
+	max-width: 380px;
 	border-radius: 1em;
 	box-shadow: -10px 10px 5px #264653;
 	background: #F2A541;
@@ -156,7 +157,6 @@ input[type=submit]:hover {
 
 .modal-header {
 	color: #fff;
-	
 }
 
 .close {
@@ -176,4 +176,15 @@ input[type=submit]:hover {
 
 .modal-body {
 	color: #fff;
+}
+
+@media (max-width: 740px) {
+	.main {
+		margin-top: 120px;
+		width: 300px;
+	}
+
+	.title {
+		left: 25px;
+	}
 }
