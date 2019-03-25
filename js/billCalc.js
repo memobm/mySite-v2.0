@@ -69,6 +69,11 @@ function modal(){
 		billAmount();
 	});
 	closeEl.addEventListener('click', () => modalEl.classList.remove('open'));
+	window.addEventListener('click', function(event) {
+		if(event.target === modalEl){
+			modalEl.classList.remove('open');
+		}
+	})
 }
 
 modal();
