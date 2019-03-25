@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,400');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 * {
 	margin: 0;
@@ -8,7 +9,7 @@
 
 body {
 	background: #F3CA40;
-	font-family: 'IBM Plex Sans', sans-serif; 
+	font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .main {
@@ -35,10 +36,11 @@ body {
 h1 {
 	padding: 10px;
 	color: white;
+	font-family: 'Pacifico', cursive;
 }
 
 .bill {
-	margin-top: 20px;
+	margin-top: 35px;
 }
 
 .tipChoice, .tipPercent, .billSplit {
@@ -92,4 +94,70 @@ input[type=submit] {
 
 .red-glow {
 	color: #CC2936;
+}
+
+/* Modal CSS */
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	transition: 0.3s all ease;
+	height: 100%;
+	width: 100%;
+	padding: 20px;
+	background: rgba(200, 172, 78, .8);
+	/* opacity: .8; */
+}
+
+.modal-content {
+	margin: 3rem auto;
+	width: 80%;
+	max-width: 640px;
+	padding: 4rem 2rem;
+	position: relative;
+	border-radius: 8px;
+	background: #264653;
+	text-align: center;
+	animation: 0.3s slidedown;
+}
+
+@keyframes slidedown{
+	from {
+		top: -100px;
+		opacity: 0;
+	} to {
+		top: 0px;
+		opacity: 1;
+	}
+}
+
+.open {
+	display: block;
+}
+
+.modal-header {
+	color: #fff;
+	
+}
+
+.close {
+	position: absolute;
+	left: 10px;
+	top: 0;
+	background: transparent;
+	color: #ebebee;
+	outline: none;
+	border: none;
+	font-size: 4rem;
+}
+
+.close:hover {
+	cursor: pointer;
+}
+
+.modal-body {
+	color: #fff;
 }
