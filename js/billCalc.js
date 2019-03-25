@@ -26,7 +26,7 @@ function billAmount() {
 
 	// Validation arguments
 
-	if(bill == '' || tip == '' || billSplit == '') {
+	if (bill == '' || tip == '' || billSplit == '') {
 		alertMsg.innerHTML = 'Enter all fields';
 		billMsg.innerHTML = '';
 		billSplitMsg.innerHTML = '';
@@ -40,14 +40,14 @@ function billAmount() {
 		alertMsg.classList.add('red-glow');
 		setTimeout(() => alertMsg.classList.remove('red-glow'), 600);
 
-	} else if(tip == 0) {
+	} else if (tip == 0) {
 		alertMsg.innerHTML = 'Enter tip amount';
 		billMsg.innerHTML = '';
 		billSplitMsg.innerHTML = '';
 		alertMsg.classList.add('red-glow');
 		setTimeout(() => alertMsg.classList.remove('red-glow'), 600);
 
-	} else if(billSplit <= 0 || billSplit == '') {
+	} else if (billSplit <= 0 || billSplit == '') {
 		alertMsg.innerHTML = 'Enter a correct split amount';
 		billMsg.innerHTML = '';
 		billSplitMsg.innerHTML = '';
@@ -63,14 +63,14 @@ function billAmount() {
 
 // Adding Event Listeners
 
-function modal(){
+function modal() {
 	btnOpen.addEventListener('click', () => {
 		modalEl.classList.add('open');
 		billAmount();
 	});
 	closeEl.addEventListener('click', () => modalEl.classList.remove('open'));
-	window.addEventListener('click', function(event) {
-		if(event.target === modalEl){
+	window.addEventListener('click', function (event) {
+		if (event.target === modalEl) {
 			modalEl.classList.remove('open');
 		}
 	})

@@ -28,21 +28,22 @@ input[type=number] {
 	background: black;
 	color: white;
 	text-align: center;
-	border: 0; 
+	border: 0;
 }
 
-/* Change the placeholder's color in the different browses
+/* Change the placeholder's color in the different browses */
 
-::-webkit-input-placeholder { /* Chrome, Safari, and Opera */
+::-webkit-input-placeholder {
+	/* Chrome, Safari, and Opera */
 	color: #222222;
 }
 
-::-moz-placeholder { /*Frirefox */
+::-moz-placeholder {
+	/*Frirefox */
 	color: #222222;
 }
 
-::-ms-input-placeholder { /* Edge */
+::-ms-input-placeholder {
+	/* Edge */
 	color: #222222;
 }
-
-

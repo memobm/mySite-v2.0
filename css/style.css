@@ -7,16 +7,18 @@
 }
 
 body {
-    font-family: 'Helvetica Neue','Helvetica','Roboto','Arial','sans-serif';
+    font-family: 'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', 'sans-serif';
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
 }
 
 .titleColor {
-    background: linear-gradient(to bottom, #ebebeb 50%, #ffffff 50%); /* Adding two colors in onw div */
+    background: linear-gradient(to bottom, #ebebeb 50%, #ffffff 50%);
+    /* Adding two colors in onw div */
     padding: 50px;
 }
 
@@ -48,7 +50,7 @@ img {
     border-radius: 8px;
 }
 
- .btnHover{
+.btnHover {
     background: #F66D6D;
     color: #ebebeb;
     width: 200px;
@@ -68,7 +70,7 @@ img {
     color: #748182;
 }
 
-.fa-set:hover{
+.fa-set:hover {
     opacity: .7;
 }
 
