@@ -10,6 +10,7 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" href="css/clock.css">
 </head>
 
 <body>
@@ -71,7 +72,7 @@
     <section id="project">
         <div class="projectTitle">
             <h1 class="projectHeader">Projects</h1>
-            <p>Here are some projects I have worked on in the past</p>
+            <p class="tagline">Here are some projects I have worked on in the past</p>
         </div>
         <div class="container project-container">
             <div class="row">
@@ -83,7 +84,8 @@
                     <i class="fa fa-desktop projectIcons"></i>
                     <i class="fa fa-tablet projectIcons"></i>
                     <i class="fa fa-mobile projectIcons"></i>
-                    <p>Developed a website for a local business using WordPress to update an old website design. Added
+                    <p>Developed a website for a local business using WordPress to update an old website design.
+                        Added
                         small custom code snippets to the Wordpress theme to account for mobile design. </p>
                     <a href="http://www.landycleaningservice.com" target="_blank"><button class="btn1 btnAlt2">Visit
                             Site</button></a>
@@ -98,7 +100,8 @@
                     <i class="fa fa-desktop projectIcons"></i>
                     <i class="fa fa-tablet projectIcons"></i>
                     <i class="fa fa-mobile projectIcons"></i>
-                    <p>A simple calculator to take the guesswork out of finding out how much to tip and by how much to
+                    <p>A simple calculator to take the guesswork out of finding out how much to tip and by how much
+                        to
                         split the bill</p>
                     <a href="billCalc.html"><button class="btn1 btnAlt3">Visit Site</button></a>
                 </div>
@@ -117,6 +120,24 @@
                     <i class="fa fa-mobile projectIcons"></i>
                     <p>A real-time temperature converter</p>
                     <a href="tempConverter.html"><button class="btn1 btnAlt4">Visit Site</button></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="projectHeader">Coming Soon</h2>
+                    <p>I am always working on something new. Stay tuned for future projects.</p>
+                </div>
+                <div class="col-6">
+                    <div class="clock">
+                        <div class="clock-body">
+                            <div class="clock-hours"></div>
+                            <span class="clock-symbol">:</span>
+                            <div class="clock-minutes"></div>
+                            <span class="clock-symbol">:</span>
+                            <div class="clock-seconds"></div>
+                            <div class="clock-time"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,6 +172,7 @@
     </footer>
 
     <script src="js/app.js"></script>
+    <script src="js/clock.js"></script>
 </body>
 
 </html>
