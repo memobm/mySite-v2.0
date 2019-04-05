@@ -18,7 +18,7 @@ h2 {
 
 .titleColor {
     background: linear-gradient(to bottom, #ebebeb 50%, #ffffff 50%);
-    /* Adding two colors in onw div */
+    /* Adding two colors in one div */
     padding: 50px;
 }
 
@@ -74,7 +74,7 @@ img {
     opacity: .7;
 }
 
-.col-sm i {
+.col-sm > i {
     font-size: 45px;
     color: #F66D6D;
 }
@@ -101,12 +101,15 @@ img {
     color: #e2dede;
 }
 
-div.expRow {
+div > .expRow {
     padding: 20px;
 }
 
 
 /* ----------Project Section ------------*/
+.projectTitle > p {
+    margin: 0;
+}
 
 #project {
     padding: 10px;
@@ -118,10 +121,10 @@ div.expRow {
 
 .projectTitle {
     text-align: center;
-    padding: 50px;
+    padding: 50px 50px 20px 50px;
 }
 
-#project h2 {
+#project > h2 {
     text-transform: uppercase;
 }
 
