@@ -31,7 +31,7 @@ body {
 	border-radius: .5em;
 	position: absolute;
 	top: -34px;
-	left: 65px;
+	left: 55px;
 	letter-spacing: 2px;
 }
 
@@ -190,6 +190,6 @@ input[type=submit]:hover {
 	}
 
 	.title {
-		left: 25px;
+		left: 10px;
 	}
 }
